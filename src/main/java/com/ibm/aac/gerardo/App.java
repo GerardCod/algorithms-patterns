@@ -1,5 +1,6 @@
 package com.ibm.aac.gerardo;
 
+import com.ibm.aac.gerardo.sorting.BubbleSort;
 import com.ibm.aac.gerardo.sorting.InsertionSort;
 import com.ibm.aac.gerardo.sorting.SelectionSort;
 import com.ibm.aac.gerardo.sorting.Sorteable;
@@ -42,14 +43,23 @@ public class App {
         algorithm = new InsertionSort();
         algorithm.sort(namesCopy);
 
+        algorithm = new BubbleSort();
+        String[] sorted = algorithm.sort(names);
+
         for (String name: namesSorted) {
-            System.out.println(name );
+            System.out.println(name);
         }
 
         System.out.println("--------------------------------------------------------");
-
+        
         for (String name: namesCopy) {
-            System.out.println(name );
+            System.out.println(name);
+        }
+        
+        System.out.println("--------------------------------------------------------");
+        
+        for (String name: sorted) {
+            System.out.println(name);
         }
     }
 }

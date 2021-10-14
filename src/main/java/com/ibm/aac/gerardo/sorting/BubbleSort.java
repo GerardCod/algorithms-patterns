@@ -10,15 +10,15 @@ public class BubbleSort implements Sorteable {
       
       for (int j = 0; j < copyNames.length - 1; j++) {
         
-        if (copyNames[j].compareTo(copyNames[j + 1]) < 0) {
+        if (copyNames[j + 1].compareTo(copyNames[j]) < 0) {
           String aux = copyNames[j + 1];
-          copyNames[j] = copyNames[j + 1];
-          copyNames[j + 1] = aux;
+          copyNames[j + 1] = copyNames[j];
+          copyNames[j] = aux;
         }
       }
     }
     
-    return null;
+    return copyNames;
   }
   
 }
