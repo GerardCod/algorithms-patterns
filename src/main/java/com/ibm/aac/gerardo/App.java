@@ -3,6 +3,7 @@ package com.ibm.aac.gerardo;
 import com.ibm.aac.gerardo.sorting.BubbleSort;
 import com.ibm.aac.gerardo.sorting.InsertionSort;
 import com.ibm.aac.gerardo.sorting.MergeSort;
+import com.ibm.aac.gerardo.sorting.QuickSort;
 import com.ibm.aac.gerardo.sorting.SelectionSort;
 import com.ibm.aac.gerardo.sorting.Sorteable;
 
@@ -69,7 +70,7 @@ public class App {
             System.out.println(name);
         } */
 
-        Sorteable algorithm = new MergeSort();
+        Sorteable algorithm = new QuickSort();
         String[] namesSorted = algorithm.sort(names);
 
         for (String name: namesSorted) {
