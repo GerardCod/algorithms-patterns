@@ -36,28 +36,34 @@ public class App {
             "Flores Aguilar Aniyensy Sarai",
             "De jesus Ramos Ariana", 
         };
-
+        
+        System.out.println("Selection sort");
+        System.out.println("");
+        
         Sorteable algorithm = new SelectionSort();
         String[] namesSorted = algorithm.sort(names);
-            
-        algorithm = new InsertionSort();
-        algorithm.sort(namesCopy);
-
-        algorithm = new BubbleSort();
-        String[] sorted = algorithm.sort(names);
-
+        
         for (String name: namesSorted) {
             System.out.println(name);
         }
-
+        
         System.out.println("--------------------------------------------------------");
+        System.out.println("Insertion sort");
+        System.out.println("");
+        
+        algorithm = new InsertionSort();
+        algorithm.sort(namesCopy);
         
         for (String name: namesCopy) {
             System.out.println(name);
         }
         
         System.out.println("--------------------------------------------------------");
+        System.out.println("Bubble sort");
+        System.out.println("");
         
+        algorithm = new BubbleSort();
+        String[] sorted = algorithm.sort(names);
         for (String name: sorted) {
             System.out.println(name);
         }
