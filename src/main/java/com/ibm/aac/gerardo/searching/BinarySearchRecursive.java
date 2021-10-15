@@ -16,6 +16,7 @@ public class BinarySearchRecursive implements Searchable<String> {
 
     if (target.compareTo(data[middle]) < 0) {
       return searchHelper(data, target, min, middle - 1);
+      
     }
 
     if (target.compareTo(data[middle]) > 0) {
