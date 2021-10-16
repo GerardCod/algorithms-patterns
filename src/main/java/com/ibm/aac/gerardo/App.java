@@ -1,11 +1,14 @@
 package com.ibm.aac.gerardo;
 
+import java.util.Scanner;
+
+/* 
 import com.ibm.aac.gerardo.sorting.BubbleSort;
 import com.ibm.aac.gerardo.sorting.InsertionSort;
 import com.ibm.aac.gerardo.sorting.MergeSort;
 import com.ibm.aac.gerardo.sorting.QuickSort;
 import com.ibm.aac.gerardo.sorting.SelectionSort;
-import com.ibm.aac.gerardo.sorting.Sorteable;
+import com.ibm.aac.gerardo.sorting.Sorteable; */
 
 /**
  * Hello world!
@@ -13,7 +16,7 @@ import com.ibm.aac.gerardo.sorting.Sorteable;
  */
 public class App {
     public static void main(String[] args) {
-        String[] names = new String[] { 
+        /* String[] names = new String[] { 
             "Garcia Arreguin Montserrat Carolina ",
             "Cortes Lagunes Ruth Silvana", 
             "Flores Silva	Karla Paulette	Villa de Alvarez ", 
@@ -24,7 +27,7 @@ public class App {
             "Aguayo Gonzalez Jaime Francisco", 
             "Flores Aguilar Aniyensy Sarai",
             "De jesus Ramos Ariana", 
-        };
+        }; */
 
         /* String[] namesCopy = new String[] { 
             "Garcia Arreguin Montserrat Carolina ",
@@ -70,11 +73,18 @@ public class App {
             System.out.println(name);
         } */
 
-        Sorteable algorithm = new QuickSort();
+/*         Sorteable algorithm = new QuickSort();
         String[] namesSorted = algorithm.sort(names);
 
         for (String name: namesSorted) {
             System.out.println(name);
-        }
+        } */
+
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Ingresa tu nombre");
+        String fullName = scan.nextLine();
+        System.out.println("Tu nombre es: " + fullName);
+
+        scan.close();
     }
 }
